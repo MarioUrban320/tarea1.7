@@ -7,96 +7,127 @@
 </head>
 <body>
     <h1>Etiquetas de contenido y texto by Mario</h1>
-    <p>HTML permite organizar el contenido de una página y dar significado a cada parte del texto.</p>
+    <nav aria-label="Menú del contenido">
+        <ul>
+            <li><a href="#contenido">Contenido</a></li>
+            <li><a href="#preformateado">Texto preformateado</a></li>
+            <li><a href="#glosario">Glosario</a></li>
+            <li><a href="#imagen">Imagen</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#formato-texto">Formato de texto</a></li>
+            <li><a href="#enlaces">Enlaces</a></li>
+            <li><a href="#caracteres-especiales">Caracteres especiales</a></li>
+        </ul>
+    </nav>
 
-    <hr>
+    <section id="contenido">
+        <h2>Contenido</h2>
+        <p>HTML permite organizar el contenido de una página y dar significado a cada parte del texto.</p>
 
-    <div>
-        <p>Este bloque agrupa contenido relacionado sobre el uso de etiquetas.</p>
-    </div>
+        <hr>
 
-    <blockquote>
-        <p>“La estructura semántica ayuda a que el contenido sea más claro y accesible.”</p>
-    </blockquote>
+        <div>
+            <p>Este bloque agrupa contenido relacionado sobre el uso de etiquetas.</p>
+        </div>
 
-    <h2>Ejemplo de texto preformateado</h2>
-    <pre>
+        <blockquote>
+            <p>“La estructura semántica ayuda a que el contenido sea más claro y accesible.”</p>
+        </blockquote>
+    </section>
+
+    <section id="preformateado">
+        <h2>Ejemplo de texto preformateado</h2>
+        <pre>
 Contenido
   organizado
     respetando los espacios
-    </pre>
+        </pre>
+    </section>
 
-    <h2>Glosario</h2>
-    <dl>
-        <dt>Etiqueta</dt>
-        <dd>Elemento que define la estructura o el significado de una parte del documento HTML.</dd>
-        <dt>Contenido</dt>
-        <dd>Texto, imágenes y otros elementos que se muestran en una página web.</dd>
-    </dl>
+    <section id="glosario">
+        <h2>Glosario</h2>
+        <dl>
+            <dt>Etiqueta</dt>
+            <dd>Elemento que define la estructura o el significado de una parte del documento HTML.</dd>
+            <dt>Contenido</dt>
+            <dd>Texto, imágenes y otros elementos que se muestran en una página web.</dd>
+        </dl>
+    </section>
 
-    <figure>
-        <img src="images/paisaje.svg" alt="Ilustración de un sol sobre montañas verdes">
-        <figcaption>Ilustración sencilla de un paisaje.</figcaption>
-    </figure>
+    <section id="imagen">
+        <h2>Imagen</h2>
+        <figure>
+            <img src="images/paisaje.svg" alt="Ilustración de un sol sobre montañas verdes">
+            <figcaption>Ilustración sencilla de un paisaje.</figcaption>
+        </figure>
+    </section>
 
-    <h2>Listas</h2>
-    <h3>Lista ordenada con letras mayúsculas</h3>
-    <ol type="A" start="3">
-        <li>Planificar el contenido</li>
-        <li>Escribir el HTML</li>
-        <li>Revisar el resultado</li>
-    </ol>
+    <section id="listas">
+        <h2>Listas</h2>
+        <h3>Lista ordenada con letras mayúsculas</h3>
+        <ol type="A" start="3">
+            <li>Planificar el contenido</li>
+            <li>Escribir el HTML</li>
+            <li>Revisar el resultado</li>
+        </ol>
 
-    <h3>Lista ordenada inversa</h3>
-    <ol reversed>
-        <li>Publicar la página</li>
-        <li>Probar los enlaces</li>
-        <li>Preparar el documento</li>
-    </ol>
+        <h3>Lista ordenada inversa</h3>
+        <ol reversed>
+            <li>Publicar la página</li>
+            <li>Probar los enlaces</li>
+            <li>Preparar el documento</li>
+        </ol>
 
-    <h3>Lista sin ordenar</h3>
-    <ul>
-        <li>Párrafos</li>
-        <li>Imágenes</li>
-        <li>Listas</li>
-    </ul>
+        <h3>Lista sin ordenar</h3>
+        <ul>
+            <li>Párrafos</li>
+            <li>Imágenes</li>
+            <li>Listas</li>
+        </ul>
+    </section>
 
-    <h2>Formato de texto</h2>
-    <p>
-        <em>Énfasis</em> y <strong>importancia</strong> pueden destacarse; una nota
-        <small>en letra pequeña</small> puede acompañar a un precio anterior <s>10 €</s>.
-        El libro <cite>Don Quijote de la Mancha</cite> incluye la frase
-        <q>En un lugar de la Mancha</q>. <dfn>HTML</dfn> es el lenguaje de marcado
-        para la web y <abbr title="HyperText Markup Language">HTML</abbr> es su abreviatura.
-        La actividad será el <time datetime="2026-10-11">11 de octubre de 2026</time>.
-    </p>
-    <p>
-        Para crear un título se puede usar <code>h1</code>, y
-        <var>n</var> representa una variable. El programa muestra
-        <samp>Proceso completado</samp>; para guardar, pulsa <kbd>Ctrl</kbd> + <kbd>S</kbd>.
-        El agua es H<sub>2</sub>O y dos al cuadrado es 2<sup>2</sup>.
-        También se puede escribir en <i>otro tono</i>, marcar una palabra <b>visualmente</b>
-        o <u>subrayarla</u>. <mark>Este texto está resaltado</mark> y
-        <span>este fragmento está agrupado con span</span>.
-        <br>
-        Esta frase continúa en otra línea, y una dirección larga puede dividirse en
-        super<wbr>califragilistico<wbr>espialidoso.
-    </p>
+    <section id="formato-texto">
+        <h2>Formato de texto</h2>
+        <p>
+            <em>Énfasis</em> y <strong>importancia</strong> pueden destacarse; una nota
+            <small>en letra pequeña</small> puede acompañar a un precio anterior <s>10 €</s>.
+            El libro <cite>Don Quijote de la Mancha</cite> incluye la frase
+            <q>En un lugar de la Mancha</q>. <dfn>HTML</dfn> es el lenguaje de marcado
+            para la web y <abbr title="HyperText Markup Language">HTML</abbr> es su abreviatura.
+            La actividad será el <time datetime="2026-10-11">11 de octubre de 2026</time>.
+        </p>
+        <p>
+            Para crear un título se puede usar <code>h1</code>, y
+            <var>n</var> representa una variable. El programa muestra
+            <samp>Proceso completado</samp>; para guardar, pulsa <kbd>Ctrl</kbd> + <kbd>S</kbd>.
+            El agua es H<sub>2</sub>O y dos al cuadrado es 2<sup>2</sup>.
+            También se puede escribir en <i>otro tono</i>, marcar una palabra <b>visualmente</b>
+            o <u>subrayarla</u>. <mark>Este texto está resaltado</mark> y
+            <span>este fragmento está agrupado con span</span>.
+            <br>
+            Esta frase continúa en otra línea, y una dirección larga puede dividirse en
+            super<wbr>califragilistico<wbr>espialidoso.
+        </p>
+    </section>
 
-    <h2>Enlaces</h2>
-    <p><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener noreferrer">Consulta la documentación de HTML</a></p>
-    <p><a href="mailto:fernando@example.com">Enviar un correo</a></p>
-    <p><a href="tel:+34123456789">Llamar por teléfono</a></p>
-    <p><a href="files/etiquetas-html.txt" download="etiquetas-html.txt">Descargar una guía breve de etiquetas HTML</a></p>
+    <section id="enlaces">
+        <h2>Enlaces</h2>
+        <p><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener noreferrer">Consulta la documentación de HTML</a></p>
+        <p><a href="mailto:fernando@example.com">Enviar un correo</a></p>
+        <p><a href="tel:+34123456789">Llamar por teléfono</a></p>
+        <p><a href="files/etiquetas-html.txt" download="etiquetas-html.txt">Descargar una guía breve de etiquetas HTML</a></p>
+    </section>
 
-    <h2>Caracteres especiales</h2>
-    <p>Una etiqueta escrita para que se vea en pantalla: <code>&lt;p&gt;Texto&lt;/p&gt;</code>.</p>
-    <p>
-        El símbolo del euro con distintas representaciones:
-        entidad <code>&amp;euro;</code> = &euro;,
-        código decimal <code>&amp;#8364;</code> = &#8364;,
-        código hexadecimal <code>&amp;#x20AC;</code> = &#x20AC;.
-    </p>
-    <p>Varios espacios seguidos con <code>&amp;nbsp;</code>: primero&nbsp;&nbsp;&nbsp;después.</p>
+    <section id="caracteres-especiales">
+        <h2>Caracteres especiales</h2>
+        <p>Una etiqueta escrita para que se vea en pantalla: <code>&lt;p&gt;Texto&lt;/p&gt;</code>.</p>
+        <p>
+            El símbolo del euro con distintas representaciones:
+            entidad <code>&amp;euro;</code> = &euro;,
+            código decimal <code>&amp;#8364;</code> = &#8364;,
+            código hexadecimal <code>&amp;#x20AC;</code> = &#x20AC;.
+        </p>
+        <p>Varios espacios seguidos con <code>&amp;nbsp;</code>: primero&nbsp;&nbsp;&nbsp;después.</p>
+    </section>
 </body>
 </html>
