@@ -1,0 +1,6 @@
+Guía breve de etiquetas HTML
+
+- p: define un párrafo.
+- a: crea un enlace.
+- img: inserta una imagen.
+- ul y ol: crean listas.
